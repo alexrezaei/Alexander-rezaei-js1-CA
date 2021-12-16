@@ -1,0 +1,112 @@
+nav {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+nav a {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Chilanka", cursive;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #dddddd;
+  border-top-color: red;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  align-items: center;
+  background: black;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.card .image {
+  margin-top: 20px;
+  background: lightblue;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: gray;
+  width: 100px;
+  border-radius: 30px;
+}
+
+.text p {
+  font-size: 30px;
+  color: white;
+}
+
+.card .name {
+  font-size: 20px;
+  font-family: "Chilanka", cursive;
+  color: white;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 30px;
+  background: blue;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+}
+
+.hp {
+  color: red;
+}
